@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "Public")));
 
 // Set the view engine to EJS
-app.set("view engine", "html");
+app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 
 // Use the routes

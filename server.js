@@ -19,7 +19,7 @@ app.set("views", path.join(__dirname, "views"));
 // Use the routes
 app.use("/", userRoutes);
 
-const PORT = process.env.PORT || 8080;
+const PORT = 8080;
 app.listen(PORT, () => {
   console.log(`http://localhost:${PORT}/users`);
 });

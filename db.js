@@ -1,5 +1,6 @@
 // db.js
 const mysql = require("mysql2");
+const { stack } = require("./routes/userRoutes");
 
 // Database connection details
 const db = mysql.createConnection({

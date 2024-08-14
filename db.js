@@ -4,7 +4,7 @@ const { stack } = require("./routes/userRoutes");
 
 // Database connection details
 const db = mysql.createConnection({
-  host: "dbstore.c96gcqkucapa.eu-north-1.rds.amazonaws.com",
+  host: "database-1.c96gcqkucapa.eu-north-1.rds.amazonaws.com",
   user: "admin",
   password: "banitiger",
   port: "3306",
@@ -20,3 +20,4 @@ db.connect((err) => {
 });
 
 module.exports = db;
+

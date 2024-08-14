@@ -13,7 +13,7 @@
     <% users.forEach(user => { %>
       <li>
         <div class="user-info">
-          <%= user.uname %> (Pass: <%= user.upass %>)
+          <%= user.uname %> (Email: <%= user.email %>)
         </div>
         <div class="actions">
           <form action="/users/<%= user.uid %>/delete" method="POST" style="display:inline;">
@@ -36,6 +36,9 @@
   <form action="/users" method="POST">
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" required>
+    <br>
+    <label for="name">Email:</label>
+    <input type="text" id="email" name="email" required>
     <br>
     <label for="pass">Pass:</label>
     <input type="text" id="pass" name="pass" required>

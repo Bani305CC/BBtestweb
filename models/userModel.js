@@ -13,8 +13,8 @@ const User = {
   },
 
   create: (userData, callback) => {
-    const query = 'INSERT INTO user (uname, upass) VALUES (?, ?)'; // Changed to 'info'
-    db.query(query, [userData.uname, userData.upass], (err, results) => {
+    const query = 'INSERT INTO user (uname, upass) VALUES (?, ?)'; // Changed to 'info'   
+    db.query(query, [userData.name, userData.pass], (err, results) => {
       if (err) {
         return callback(err, null);
       }

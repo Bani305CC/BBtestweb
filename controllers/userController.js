@@ -12,8 +12,9 @@ const userController = {
   },
 
   createUser: (req, res) => {
-    const { bname } = req.body;
-    User.create({ uname, upass}, (err, userId) => {
+    const { name } = req.body;
+    const { pass } = req.body;
+    User.create({ name, pass}, (err, userId) => {
       if (err) {
         return res.status(500).json({ error: err.message });
       }

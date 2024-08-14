@@ -4,11 +4,11 @@ const { stack } = require("./routes/userRoutes");
 
 // Database connection details
 const db = mysql.createConnection({
-  host: "dbestore.c96gcqkucapa.eu-north-1.rds.amazonaws.com",
+  host: "dbstore.c96gcqkucapa.eu-north-1.rds.amazonaws.com",
   user: "admin",
   password: "banitiger",
   port: "3306",
-  database: "dbestore",
+  database: "dbstore",
 });
 
 db.connect((err) => {
